@@ -5,26 +5,19 @@
   <div>
     <label for="title" id="title">Title:</label>
     <br>
-    <input type="text" id="title">
+    <input type="text" id="title" #newtitle>
   </div>
 
   <!-- Link field -->
   <div>
-    <label for="link" id="link">Link:</label>
+    <label for="link" id="link" #newlink>Link:</label>
     <br>
     <input type="text" id="link">
 
-    <div>
-    <label for="title" id="title">Title:</label>
-    <br>
-    <input type="text" id="title">
-  </div>
   <br>
 
   <!-- Submit button -->
-  <button>
-    Submit link
-  </button>
+  <button (click)="addArticle(newtitle, newlink)">Submit link</button>
   </div>
 
 
